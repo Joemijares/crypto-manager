@@ -8,8 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Planned
-- Full Litecoin support
-- Full Dogecoin support
 - Solana wallet integration
 - Polkadot wallet integration
 - Caching layer for exchange rates
@@ -17,6 +15,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CSV/JSON export functionality
 - Docker container
 - GraphQL API wrapper
+- CI/CD pipeline with GitHub Actions
+
+## [0.2.0-alpha] - 2024-10-01
+
+### Added
+- ✅ **Full Litecoin (LTC) support** - Complete wallet tracking via Blockchair API
+- ✅ **Full Dogecoin (DOGE) support** - Complete wallet tracking via Blockchair API  
+- ✅ **Comprehensive test suite** - 49+ unit and integration tests
+  - Bitcoin module tests (10 tests)
+  - Ethereum module tests (12 tests)
+  - LTC/DOGE module tests (7 tests)
+  - Transaction/exchange rate tests (8 tests)
+  - Integration tests (6 tests)
+  - Configuration tests (2 tests)
+- ✅ **Test documentation** - Complete testing guide in tests/README.md
+- ✅ **Mock API testing** - Unit tests with mocked external APIs
+- ✅ **Integration test framework** - Optional real API testing
+
+### Changed
+- LTC module upgraded from constants-only to full implementation
+- DOGE module upgraded from constants-only to full implementation
+- Improved error handling in LTC and DOGE modules
+- Enhanced documentation with examples and docstrings
+
+### Developer Experience
+- Added test runner support for unittest and pytest
+- Added test coverage tracking capability
+- Organized tests by module for easier maintenance
+- Integration tests can be enabled via environment variable
 
 ## [0.1.0-alpha] - 2024-09-30
 

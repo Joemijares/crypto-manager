@@ -9,16 +9,16 @@ A comprehensive Python library for managing and tracking cryptocurrency wallets 
 ## 🌟 Features
 
 ### Supported Cryptocurrencies
-- **Bitcoin (BTC)** - Full transaction tracking with linked address discovery
-- **Ethereum (ETH)** - Native ETH + ERC-20 token support
-  - USDT (ERC-20)
-  - USDC (ERC-20)
-  - BUSD (ERC-20)
-- **Tron (TRX)** - TRC-20 USDT support
-- **Litecoin (LTC)** - Ready for implementation
-- **Dogecoin (DOGE)** - Ready for implementation
-- **Solana (SOL)** - Ready for implementation
-- **Polkadot (DOT)** - Ready for implementation
+- **Bitcoin (BTC)** ✅ Full transaction tracking with linked address discovery
+- **Ethereum (ETH)** ✅ Native ETH + ERC-20 token support
+  - USDT (ERC-20) ✅
+  - USDC (ERC-20) ✅
+  - BUSD (ERC-20) ✅
+- **Tron (TRX)** ✅ TRC-20 USDT support
+- **Litecoin (LTC)** ✅ Full wallet tracking (NEW!)
+- **Dogecoin (DOGE)** ✅ Full wallet tracking (NEW!)
+- **Solana (SOL)** 🚧 Coming soon
+- **Polkadot (DOT)** 🚧 Coming soon
 
 ### Core Capabilities
 ✅ **Account Balance Tracking** - Real-time balance queries across all supported chains  
@@ -28,6 +28,8 @@ A comprehensive Python library for managing and tracking cryptocurrency wallets 
 ✅ **Multi-Network Support** - Query multiple blockchains from a single interface  
 ✅ **Proxy Support** - SOCKS5 and HTTP proxy configuration for Bitcoin queries  
 ✅ **Raw & Formatted Values** - Access both human-readable and raw blockchain values  
+✅ **Comprehensive Testing** - 49+ unit and integration tests for stability  
+✅ **Well Documented** - Detailed guides for onboarding, setup, and contributing  
 
 ## 📦 Installation
 
@@ -107,6 +109,26 @@ from crypto_manager.tron import get_account_info_usdt
 # Get USDT balance on Tron network
 tron_usdt = get_account_info_usdt("TADCt9L4JjrSrCLM2ZtVcs4yuhWoFTxYbT")
 print(f"USDT (TRC-20) Balance: {tron_usdt['balance']} USDT")
+```
+
+### 6. Query Litecoin (NEW!)
+```python
+from crypto_manager.ltc import get_account_info
+
+# Get Litecoin wallet info
+ltc_wallet = get_account_info("LTC_address_here")
+print(f"LTC Balance: {ltc_wallet['balance']} LTC")
+print(f"Transactions: {len(ltc_wallet['transactions'])}")
+```
+
+### 7. Query Dogecoin (NEW!)
+```python
+from crypto_manager.doge import get_account_info
+
+# Get Dogecoin wallet info  
+doge_wallet = get_account_info("DOGE_address_here")
+print(f"DOGE Balance: {doge_wallet['balance']} DOGE")
+print("Much wow! To the moon! 🚀🐕")
 ```
 
 ## 📖 Documentation
@@ -215,20 +237,59 @@ ETHERSCAN_API_KEY = "your_api_key_here"
 
 ## 🧪 Testing
 
-Run the example scripts to test functionality:
+### Run Unit Tests
+
+Comprehensive test suite with 49+ tests covering all modules:
+
+```bash
+# Run all tests
+python3 -m pytest tests/ -v
+
+# Or using unittest
+python3 -m unittest discover tests
+
+# Run specific module tests
+python3 -m pytest tests/test_bitcoin.py -v
+python3 -m pytest tests/test_ethereum.py -v
+python3 -m pytest tests/test_ltc_doge.py -v
+
+# Run with coverage
+pip install pytest-cov
+python3 -m pytest tests/ --cov=crypto_manager --cov-report=html
+```
+
+### Test Coverage
+
+- **Bitcoin**: 10 tests covering constants, proxy config, transactions
+- **Ethereum**: 12 tests covering ETH and ERC-20 tokens
+- **LTC/DOGE**: 7 tests covering new implementations
+- **Transactions**: 8 tests covering exchange rates
+- **Integration**: 6 tests for real API calls (opt-in)
+
+See [tests/README.md](tests/README.md) for detailed testing documentation.
+
+### Run Example Scripts
+
+Test functionality with example scripts:
 
 ```bash
 # Test Bitcoin
-python -m crypto_manager.bitcoin
+python3 -m crypto_manager.bitcoin
 
 # Test Ethereum
-python -m crypto_manager.ethereum
+python3 -m crypto_manager.ethereum
+
+# Test Litecoin
+python3 -m crypto_manager.ltc
+
+# Test Dogecoin
+python3 -m crypto_manager.doge
 
 # Test Tron USDT
-python -m crypto_manager.tron
+python3 -m crypto_manager.tron
 
 # Test Exchange Rates
-python -m crypto_manager.transactions
+python3 -m crypto_manager.transactions
 ```
 
 ## 🏗️ Project Structure
@@ -293,8 +354,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🗺️ Roadmap
 
-- [ ] Implement full Litecoin support
-- [ ] Implement full Dogecoin support
+- [x] Implement full Litecoin support ✅ (v0.2.0-alpha)
+- [x] Implement full Dogecoin support ✅ (v0.2.0-alpha)
+- [x] Comprehensive test suite ✅ (v0.2.0-alpha)
 - [ ] Implement Solana support
 - [ ] Implement Polkadot support
 - [ ] Add caching layer for exchange rates
@@ -302,6 +364,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Export transaction history to CSV/JSON
 - [ ] Docker container for easy deployment
 - [ ] GraphQL API wrapper
+- [ ] CI/CD pipeline with GitHub Actions
+- [ ] Publish to PyPI
 
 ---
 
