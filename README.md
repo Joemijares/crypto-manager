@@ -301,15 +301,33 @@ crypto-manager/
 │   ├── bitcoin.py           # Bitcoin implementation
 │   ├── ethereum.py          # Ethereum + ERC-20 tokens
 │   ├── tron.py              # Tron TRC-20 support
+│   ├── ltc.py               # Litecoin implementation ✨
+│   ├── doge.py              # Dogecoin implementation ✨
 │   ├── transactions.py      # Exchange rates & utils
-│   ├── doge.py              # Dogecoin constants
-│   ├── ltc.py               # Litecoin constants
 │   ├── sol.py               # Solana constants
 │   ├── dot.py               # Polkadot constants
 │   └── config.py            # Configuration management
+├── tests/                   # Test suite ✨
+│   ├── test_bitcoin.py      # Bitcoin tests
+│   ├── test_ethereum.py     # Ethereum tests
+│   ├── test_ltc_doge.py     # LTC/DOGE tests
+│   ├── test_transactions.py # Exchange rate tests
+│   ├── test_integration.py  # Integration tests
+│   └── README.md            # Testing guide
 ├── docs/                    # Documentation
+│   ├── ONBOARDING.md        # New user guide
+│   ├── SETUP.md             # Configuration guide
+│   └── RELEASE.md           # Release process
+├── scripts/                 # Automation scripts
+│   ├── setup-github-repo.sh # Repository configuration
+│   └── create-release.sh    # Release automation
+├── .github/                 # GitHub templates
+│   └── ISSUE_TEMPLATE/      # Issue templates
 ├── pyproject.toml           # Project metadata
-└── README.md
+├── CHANGELOG.md             # Version history
+├── CONTRIBUTING.md          # Contribution guidelines
+├── LICENSE                  # MIT License
+└── README.md                # This file
 ```
 
 ## 🤝 Contributing

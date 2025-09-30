@@ -70,15 +70,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Raw and formatted value formats
 - Timestamp support (datetime and unix)
 
-### Supported Cryptocurrencies
+### Supported Cryptocurrencies (v0.1.0-alpha)
 - ✅ Bitcoin (BTC) - Full support
 - ✅ Ethereum (ETH) - Full support
 - ✅ USDT (ERC-20) - Full support
 - ✅ USDC (ERC-20) - Full support
 - ✅ BUSD (ERC-20) - Full support
 - ✅ USDT (TRC-20) - Full support
-- 🚧 Litecoin (LTC) - Constants only
-- 🚧 Dogecoin (DOGE) - Constants only
+- ⚠️ Litecoin (LTC) - Constants only (upgraded in v0.2.0-alpha)
+- ⚠️ Dogecoin (DOGE) - Constants only (upgraded in v0.2.0-alpha)
 - 🚧 Solana (SOL) - Constants only
 - 🚧 Polkadot (DOT) - Constants only
 
@@ -87,10 +87,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - requests >= 2.32.5
 - yfinance (optional, for exchange rate history)
 
-### Known Limitations
+### Known Limitations (v0.1.0-alpha)
 - Etherscan API rate limits apply (5 calls/sec on free tier)
 - Bitcoin linked address discovery can be slow for high-activity wallets
-- LTC, DOGE, SOL, DOT modules are placeholders (constants only)
+- LTC, DOGE, SOL, DOT modules are placeholders (constants only) - **Fixed in v0.2.0-alpha**
 - Exchange rate history requires optional yfinance dependency
 
 ### Security
@@ -99,6 +99,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - All API calls over HTTPS
 - No sensitive data logged
 
-[Unreleased]: https://github.com/brendadeeznuts1111/crypto-manager/compare/v0.1.0-alpha...HEAD
+[Unreleased]: https://github.com/brendadeeznuts1111/crypto-manager/compare/v0.2.0-alpha...HEAD
+[0.2.0-alpha]: https://github.com/brendadeeznuts1111/crypto-manager/compare/v0.1.0-alpha...v0.2.0-alpha
 [0.1.0-alpha]: https://github.com/brendadeeznuts1111/crypto-manager/releases/tag/v0.1.0-alpha
 

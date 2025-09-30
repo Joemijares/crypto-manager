@@ -1,6 +1,6 @@
 [project]
 name = "crypto-manager"
-version = "0.1.0-alpha"
+version = "0.2.0-alpha"
 description = "A comprehensive Python library for managing and tracking cryptocurrency wallets across multiple blockchain networks"
 readme = "README.md"
 requires-python = ">=3.10"
