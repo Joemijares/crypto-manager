@@ -1,10 +1,59 @@
 [project]
 name = "crypto-manager"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.0-alpha"
+description = "A comprehensive Python library for managing and tracking cryptocurrency wallets across multiple blockchain networks"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Crypto Manager Contributors"}
+]
+maintainers = [
+    {name = "Crypto Manager Team"}
+]
+keywords = [
+    "cryptocurrency",
+    "bitcoin",
+    "ethereum",
+    "blockchain",
+    "wallet",
+    "crypto-tracker",
+    "transaction-history",
+    "exchange-rates",
+    "erc20",
+    "trc20",
+    "portfolio-tracker"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet",
+]
 dependencies = [
     "loguru>=0.7.3",
     "requests>=2.32.5",
 ]
+
+[project.optional-dependencies]
+history = [
+    "yfinance>=0.2.0",
+]
+dev = [
+    "black>=24.0.0",
+    "pytest>=7.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/brendadeeznuts1111/crypto-manager"
+Documentation = "https://github.com/brendadeeznuts1111/crypto-manager#readme"
+Repository = "https://github.com/brendadeeznuts1111/crypto-manager"
+Issues = "https://github.com/brendadeeznuts1111/crypto-manager/issues"
+Changelog = "https://github.com/brendadeeznuts1111/crypto-manager/blob/main/CHANGELOG.md"
